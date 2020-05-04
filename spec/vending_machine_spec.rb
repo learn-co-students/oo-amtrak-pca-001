@@ -22,7 +22,7 @@ describe "VendingMachine" do
   end
 
   let(:thank_you) { "Transaction completed, thank you for choosing Amtrak." }
-  let(:sorry) { "Tickets can't be purchased because there are not enough seats. We aplogize for the inconvenience." }
+  let(:sorry) { "Tickets can't be purchased because there are not enough seats. We apologize for the inconvenience." }
 
   let(:acela_machine)  { VendingMachine.new(acela_file, "New Haven, CT") }
   let(:surf_machine)   { VendingMachine.new(surfliner_file, "Grover Beach, CA") }
