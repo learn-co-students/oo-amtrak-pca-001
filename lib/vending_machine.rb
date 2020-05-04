@@ -36,6 +36,10 @@ class VendingMachine
     end
   end
 
+  # Returns stops that need to have available seats
+  # Currently leaves off the destination, since the passenger is getting off there
+  # Some tests seem to want this destination to also have its seating reduced
+  # need to investigate
   def find_stops(location, destination, route)
     start_index = route.find_index{|stop| stop["station name"] == location}
     end_index = route.find_index{|stop| stop["station name"] == destination}
